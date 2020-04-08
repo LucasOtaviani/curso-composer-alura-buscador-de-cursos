@@ -2,7 +2,6 @@
     "name": "lucasotaviani/buscador-cursos",
     "description": "Projeto que busca os cursos no site da Alura",
     "type": "library",
-    "license": "MIT",
     "authors": [
         {
             "name": "Lucas Otaviani",
@@ -15,6 +14,9 @@
         "symfony/css-selector": "^5.0"
     },
     "autoload": {
+        "files": [
+            "functions.php"
+        ],
         "psr-4": {
             "Alura\\BuscadorDeCursos\\": "src/"
         }
@@ -40,5 +42,7 @@
     },
     "scripts-descriptions": {
         "check": "Rodas as verificações do código. PHAN, PHPCS e PHPUNIT"
-    }
+    },
+    "license": "GPL-3.0",
+    "bin": ["buscar-cursos.php"]
 }
